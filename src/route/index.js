@@ -28,8 +28,10 @@ router.get('/template-1', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('template-1', {
+    layout: 'template-1',
+
     page: {
-      title: 'Example Page',
+      title: 'Template 1 Page',
     },
     header: [
       {
