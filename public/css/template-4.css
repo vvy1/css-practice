@@ -1,0 +1,264 @@
+:root {
+  --space-m: 12px;
+  --space-xm: 16px;
+  --space-l: 24px;
+  --space-b: 36px;
+
+  --size-d: 16px;
+  --size-s: 14px;
+  --size-l: 20px;
+  
+  --color-border: #DEE2E6;
+  --color-primary: rgb(64, 121, 255);
+  --color-white:  #ffffff;
+  --color-title: #212529;
+  --color-text: #343A40;
+
+  --border-radius: 12px;
+
+  --weight-title: 500;
+  --weight-text: 400;
+}
+
+/* =========================== */
+
+.page {
+  background: var(--color-white);
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.page_content {
+  max-width: 960px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ============================ */
+
+.header {
+  padding: var(--space-l) 0;
+  border-bottom: 1px solid var(--color-border);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 17px;
+  color: var(--color-white);
+  background: var(--color-primary);
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: calc(var(--border-radius) / 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav_inline {
+  gap: var(--space-l);
+  justify-content: flex-end;
+}
+
+.nav_vertical {
+  gap: var(--space-xm);
+  flex-direction: column;
+}
+
+.nav_link {
+  color: var(--color-text);
+  font-size: var(--size-d);
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+
+.footer {
+  padding: var(--space-l) 0;
+
+  border-top: 1px solid var(--color-border);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copiright {
+  font-size: var(--size-s);
+  color: var(--color-text);
+
+  display: block;
+
+  margin-top: var(--space-l);
+}
+
+.footer_title {
+  font-size: var(--size-l);
+  color: var(--color-title);
+
+  display: block;
+  margin-bottom: var(--space-l);
+
+  font-weight: var(--weight-title);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-b);
+}
+
+.main_image {
+  width: 500px;
+  height: 500px;
+  border-radius: var(--border-radius);
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.main_title {
+  font-size: 50px;
+  color: var(--color-title);
+  font-weight: var(--weight-title);
+  line-height: 120%;
+}
+
+.main_text {
+  color: var(--color-text);
+  font-size: var(--size-l);
+  font-weight: var(--weight-text);
+  line-height: 170%;
+}
+
+.main_button {
+  color: var(--color-white);
+  background-color: var(--color-text);
+  max-width: fit-content;
+}
+
+.featured {
+  display: flex;
+  gap: var(--space-b);
+
+  padding: var(--space-b);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  align-items: flex-start;
+  text-align: start;
+  gap: var(--space-l);
+}
+
+.card_image {
+  width: 64px;
+  height: 64px;
+  padding: var(--size-d);
+  border-radius: var(--border-radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%), #0D6EFD;
+}
+
+.card_heading {
+  font-size: 32px;
+  font-weight: var(--weight-title);
+  color: var(--color-title);
+}
+
+.card_info {
+  font-weight: var(--weight-text);
+  font-size: var(--size-d);
+  color: var(--color-text);
+}
+
+.card_link_text {
+  color: var(--color-primary);
+  font-size: var(--size-d);
+  text-decoration-line: underline;
+}
+
+
+.button {
+  display: inline-block;
+  font-size: var(--size-l);
+  font-weight: var(--weight-text);
+  text-decoration: none;
+  padding: var(--space-m) var(--space-xm);
+  border-radius: var(--border-radius);
+}
+
+.card_button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--color-primary);
+  padding: var(--space-l);
+  border-radius: var(--border-radius);
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.form_title {
+  font-size: 24px;
+  font-weight: var(--weight-title);
+  color: var(--color-white);
+}
+
+.form_action {
+  gap: 10px;
+  align-self: stretch;
+  color: var(--color-title);
+}
+
+.form_info {
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+  color: var(--color-white);
+}
+
+.form_button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-white);
+  width: 240px;
+  color: var(--color-text);
+}
