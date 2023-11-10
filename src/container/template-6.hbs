@@ -1,0 +1,118 @@
+
+<header class='header row g-0'>
+  <div class="col-3">
+    {{> logo}}
+  </div>
+  
+  <nav class='header_nav col-9'>
+
+    <div class="header_nav_right">
+      {{> nav list=header}}
+    </div>
+  </nav>
+  
+</header>
+
+<main class="main">
+  {{#with info}}
+    <div class="info">
+      
+      <h1 class="info_title">{{title}}</h1>
+      
+      <p class="info_text">{{description}}</p>
+         
+    </div>
+  {{/with}}
+
+  {{#with form}}
+    <form class="form">
+      <div class="form_main">
+        
+        <div class="form_input_list">
+          {{#each inputs}}
+            <input type="{{type}}" placeholder="{{placeholder}}" name="{{name}}" id="form-input-{{id}}" class="form_input">
+          {{/each}}
+        </div>
+        <div class="form_checkbox">
+          <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+          <div></div>
+          <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
+        <button type="submit" class="form_button">{{button}}</button>
+        
+        <p class="form_info">{{info}}</p>
+      </div>
+    </form>
+  {{/with}}
+</main>
+
+<section class="updates">
+  {{#with updates}}
+    <h2 class="updates_title">{{title}}</h2>
+      
+      <div class="updates_list">
+        
+      {{#each list}}
+        <div class="nicknames">
+          
+          {{#if @first}}
+            <img src="/fav/Vector.svg" alt="vector1" class="img_vector">
+          {{/if}}
+          
+          {{#if isSecond}}
+            <img src="/fav/Vector (pink).svg" alt="vector2" class="img_vector">
+          {{/if}}
+          
+          {{#if @last}}
+            <img src="/fav/Vector (fiol).svg" alt="vector3" class="img_vector">
+          {{/if}}
+
+          <div class="updates_info">
+            <strong class="nick_name">{{nickname}}</strong>
+            <p class="description_text">{{description}}</p>
+          </div>
+        </div>
+      {{/each}}
+      
+
+      
+      <a href="{{show_all.url}}" class="updates_link">{{show_all.text}}</a>
+    </div>
+  {{/with}}
+</section>
+
+<section class="expirience">
+  {{#with expirience}}
+    <div>
+      <div class="expirience_badge">{{badge}}</div>
+      <strong class="expirience_title">{{title}}</strong>
+      
+      <div class="expirience_cards">
+        {{#each list}}
+          <div class="cards_items">
+            <div class="cards_title">{{name}}</div>
+            <p class="cards_text">{{details}}</p>
+          </div>
+        {{/each}}
+      </div>
+      
+    </div>
+  {{/with}}
+</section>
+  
+<footer  class="row g-0 footer">
+  <div class="col-3">
+    {{> logo}}
+    <span class="footer_copiright">Copyright 2023-2024</span>
+  </div>
+
+  {{#each footer}}
+    <div class="col-3">
+      <span class="footer_title">{{title}}</span>
+      {{> nav list=links isVertical=true}}
+    </div>
+  {{/each}}
+</footer>
+
+
+
