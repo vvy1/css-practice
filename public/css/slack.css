@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url('../font/HelveticaNeueBold.ttf');
+}
+
+.body {
+  font-family: 'HelveticaNeueBold, sans-serif';
+
+  background-color: var(--color-white);
+}
+
+:root {
+  --color-white:  #FFF;
+
+  --page-width-big: 1260px;
+  --page-width-medium: 1000px;
+  --page-width-small: 700px;
+
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 20px;
+  --spacing-5: 24px;
+  --spacing-6: 28px;
+}
+
+.page {
+  display: grid;
+}
+
+.page_section {
+  display: flex;
+  justify-content: center;
+}
+
+.page_content {
+  width: 100%;
+  padding: var(--spacing-3);
+}
+
+@media all and (1260px <= width) {
+  .page_content {
+    max-width: var(--page-width-b);
+  }
+}
+
+@media all and (1000px <= width < 1260px) {
+  .page_content {
+    max-width: var(--page-width-medium);
+  }
+}
+
+@media all and (width < 1000px) {
+  .page_content {
+    max-width: var(--page-width-small);
+  }
+}
