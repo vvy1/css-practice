@@ -204,6 +204,36 @@ body {
     right: var(--spacing-2);
   }
 
+  .icons--header-right1 {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    bottom: var(--spacing-2);
+    right: 98px;
+    
+    background-color: #FFF8E3;
+  }
+
+  .icons--header-right2 {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    bottom: var(--spacing-2);
+    right: 55px;
+
+    background-color:#E1F3FC;
+  }
+
+  .icons--header-right3 {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    bottom: var(--spacing-2);
+    right: var(--spacing-2);
+
+    background-color: #FFF8E3;
+  }
+
   .field__select {
     position: absolute;
     width: 100%;
