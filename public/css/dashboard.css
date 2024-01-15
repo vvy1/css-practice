@@ -248,6 +248,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-5);
   }
 
   .analytic__button {
@@ -259,6 +260,10 @@ body {
     font-size: var(--size-6);
   }
 
+  .analytic__title2 {
+    font-size: var(--size-3);
+  }
+
   .analytic__arrow {
     width: 20px;
     height: 20px;
@@ -267,8 +272,23 @@ body {
     left: calc(100% + var(--spacing-1))
   }
 
-  .analytic__content {
-    
+  .analytic__card2 {
+    background-color: var(--color-purple-light);
+  }
+
+  .analytic__card4 {
+    border-radius: 8px;
+    border: 1px solid #E0E4E8;
+    background: #FFF;
+  }
+  
+
+  .analytic_small {
+    border-radius: 8px;
+    padding: var(--spacing-5);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
   }
 
 }
@@ -339,6 +359,10 @@ body {
 
   .icon--color-blue {
     background-color: var(--color-blue-dark);
+  }
+
+  .icon--color-purple {
+    background-color: var(--color-purple-dark);
   }
 
   .field--select {
