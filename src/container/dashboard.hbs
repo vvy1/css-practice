@@ -80,21 +80,6 @@
             ></span>
             <span class='text text--light'>Products</span>
           </a>
-
-          <div class='relative click'>
-            <div class='field field--select relative'>
-              <span
-                class='text text--light'
-              >Choose...</span>
-            </div>
-            <select class='field__select'>
-              <option value='dog'>Dog</option>
-              <option value='cat'>Cat</option>
-              <option value='hamster'>Hamster</option>
-              <option value='parrot'>Parrot</option>
-              <option value='spider'>Spider</option>
-            </select>
-          </div>
         </nav>
       </aside>
 
@@ -241,6 +226,175 @@
               </div>
             </div>
 
+          </section>
+
+          <section class='main_double'>
+
+            <div class='box text purchase'>
+              <h2 class='text--heading'>Purchase list</h2>
+              <hr class='divider' />
+
+              <div class='purchase_list'>
+                <span>ID437661</span>
+                <span>AirOn ProCam</span>
+                <span>132.32 EUR</span>
+                <span>Customer</span>
+
+                <span>May 11, 2023, 14:21</span>
+                <span>7/8 USB Type-C</span>
+                <span>Not paid</span>
+                <span>robin@com.de</span>
+              </div>
+
+              <hr class='divider' />
+
+              <div class='purchase_list'>
+                <span>ID437661</span>
+                <span>PHILIPS Essential</span>
+                <span>543 USD</span>
+                <span>Customer</span>
+
+                <span>May 11, 2023, 14:21</span>
+                <span>HD9200/90</span>
+                <span>Pay by Stripe</span>
+                <span>dima@com.ua</span>
+              </div>
+
+            </div>
+
+            <div class='box text payment'>
+              <h2 class='text--heading'>Payment</h2>
+              <hr class='divider' />
+
+              <div class='checkbox'>
+
+                <label for='CreditCard'>
+                  <input
+                    type='radio'
+                    id='CreditCard'
+                    name='paymentMethod'
+                  />
+                  Credit Card</label>
+
+                <label for='DebitCard'>
+                  <input
+                    type='radio'
+                    id='DebitCard'
+                    name='paymentMethod'
+                  />
+                  Debit card</label>
+
+                <label for='PayPal'>
+                  <input
+                    type='radio'
+                    id='PayPal'
+                    name='paymentMethod'
+                  />
+                  PayPal</label>
+              </div>
+
+              <div class='inputs'>
+                <label for='name'>
+                  Name on card
+                  <input
+                    class='field inputs--mod'
+                    type='text'
+                    name='name'
+                  />
+                </label>
+
+                <label for='number'>Credit card number
+                  <input
+                    type='text'
+                    class='field inputs--mod'
+                    name='number'
+                  />
+                </label>
+
+                <label for='expiration'>Expiration
+                  <input
+                    type='text'
+                    class='field inputs--mod'
+                    name='expiration'
+                  />
+                </label>
+
+                <label for='cvv'>CVV
+                  <input
+                    type='text'
+                    class='field inputs--mod'
+                    name='cvv'
+                  />
+                </label>
+
+              </div>
+
+              <hr class='divider' />
+
+              <div class='inputs'>
+
+                <label for='country'>
+                  Country
+                  <div class='relative click'>
+                    <div
+                      class='field field--select relative'
+                    >
+                      <span class='text'>Choose...</span>
+                      <img
+                        src='/svg/feature/select.svg'
+                        alt='select'
+                        class='text icon icon_img'
+                      />
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Ukraine</option>
+                      <option value='cat'>Turkey</option>
+                      <option value='hamster'>United Kingdom</option>
+                      <option value='parrot'>United States
+                        of America</option>
+                      <option value='spider'>Japan</option>
+                    </select>
+                  </div>
+                </label>
+
+                <label for='state'>State
+                  <div class='relative click'>
+                    <div
+                      class='field field--select relative'
+                    >
+                      <span class='text'>Choose...</span>
+                      <img
+                        src='/svg/feature/select.svg'
+                        alt='select'
+                        class='text icon icon_img'
+                      />
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Hawaii</option>
+                      <option
+                        value='cat'
+                      >California</option>
+                      <option value='hamster'>New York</option>
+                      <option value='parrot'>Kyiv</option>
+                      <option
+                        value='spider'
+                      >Ivano-Frankivsk</option>
+                    </select>
+                  </div>
+                </label>
+
+              </div>
+              <hr class='divider' />
+
+              <a
+                href='#'
+                class='nuv-button nuv-button--active nuv-button--bottom click'
+              >
+                <span class='text text--light'>Continue to
+                  checkout</span>
+              </a>
+
+            </div>
           </section>
 
         </div>
